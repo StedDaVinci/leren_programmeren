@@ -10,4 +10,4 @@ perpersoonvr = VRPER5MIN * hoelangvr
 totaalvrkosten = perpersoonvr * GROEPGROOTTE
 allestotaal = round(totaalvrkosten + kostentickets)
 
-print(f"de totale kosten voor de vr is {totaalvrkosten} euro, de tickets kosten intotaal {kostentickets} euro en intotaal is alles {allestotaal} euro.")
+print(f"Dit geweldige dagje-uit met {GROEPGROOTTE} mensen in de Speelhal met {LENGTEVR} minuten VR kost je maar {allestotaal} euro")
