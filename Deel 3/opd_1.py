@@ -6,8 +6,8 @@ if a > b:
 	print(f"A is het grootste getal: {max}")
 
 elif b > a:
-	max = b
-	print(f"B is het grootste getal: {max}")
+	min = a
+	print(f"A is het kleinste getal: {min}")
 
 else:
 	print("a en b zijn gelijk, er is geen grootste getal.")
