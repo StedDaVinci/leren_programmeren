@@ -2,13 +2,13 @@ aantalcroissanten = int(input("Hoeveel croissantjes wil je? "))
 aantalstokbroodjes = int(input("Hoeveel stokbroden wil je? "))
 aantalkortingsbonnetjes = int(input("Hoeveel geldige kortingsbonnetjes heb je? "))
 
-croissant = 39  
-stokbrood = 278 
-kortingsbon = 50  
+CROISSANT = 39  
+STOKBROOD = 278 
+KORTINGSBON = 50  
 
-aantalcroissantenkosten = croissant * aantalcroissanten
-aantalstokbroodkosten = stokbrood * aantalstokbroodjes
-aantalkortingsbonnetjeskorting = kortingsbon * aantalkortingsbonnetjes
+aantalcroissantenkosten = CROISSANT * aantalcroissanten
+aantalstokbroodkosten = STOKBROOD * aantalstokbroodjes
+aantalkortingsbonnetjeskorting = KORTINGSBON * aantalkortingsbonnetjes
 totaal = aantalcroissantenkosten + aantalstokbroodkosten
 totaalkorting = totaal - aantalkortingsbonnetjeskorting
 
