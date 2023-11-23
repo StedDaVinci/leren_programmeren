@@ -1,6 +1,6 @@
 gastheer = True
-gasten = True
-drank = True
+gasten = False
+drank = False
 chips = True
 
 if (gastheer and (gasten or chips or drank)) or (gasten and (chips or drank)) or (chips and drank):
