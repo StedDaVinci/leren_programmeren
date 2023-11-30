@@ -1,13 +1,12 @@
 gastheer = input("Wie is de gastheer? ").lower()
-gasten = False
+gasten = int(input("hoeveel gasten zijn er?"))
 drank = False
 chips = False
 
-
-party_stef = gastheer == "stef"
-party_gasten = gasten and drank and chips and not gastheer == "eugene"
-party_gastheer = drank and len(gastheer) > 0 and not gastheer == "eugene"
-
+genoeg_gasten = gasten >= 4 and gasten <= 20
+party_stef = gastheer == "stef" and genoeg_gasten
+party_gasten = genoeg_gasten and drank and chips and not gastheer == "eugene"
+party_gastheer = drank and len(gastheer) > 0 and not gastheer == "eugene" and genoeg_gasten
 
 
 
