@@ -4,9 +4,9 @@ drank = False
 chips = False
 
 genoeg_gasten = gasten >= 4 and gasten <= 20
-party_stef = gastheer == "stef" and genoeg_gasten
+party_stef = gastheer == "stef"
 party_gasten = genoeg_gasten and drank and chips and not gastheer == "eugene"
-party_gastheer = drank and len(gastheer) > 0 and not gastheer == "eugene" and genoeg_gasten
+party_gastheer = drank and len(gastheer) > 0 and not gastheer == "eugene"
 
 
 
