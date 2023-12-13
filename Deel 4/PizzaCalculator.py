@@ -14,10 +14,13 @@ PKm = 0
 PKl = 0
 
 while True:
-	try:
-		WelkePizza = input("welke maat pizza wil je bestellen? (Small/Medium/Large)").lower()
-		hvlpizza = int(input(f"hoeveel {WelkePizza} pizza's wil je bestellen?"))
-		
+	WelkePizza = input("welke maat pizza wil je bestellen? (Small/Medium/Large)").lower()
+	if WelkePizza == "small" or WelkePizza == "medium" or WelkePizza == "large":
+		try:
+			hvlpizza = int(input(f"hoeveel {WelkePizza} pizza's wil je bestellen?"))
+		except ValueError:
+			print("Vul een getal in")
+
 		if WelkePizza == "small":
 			PKs += (PSs * hvlpizza)
 
@@ -26,16 +29,15 @@ while True:
 
 		elif WelkePizza == "large":
 			PKl += (PSl * hvlpizza)
+	else:
+		print("Deze pizza is onbekend")
 		
-		else:
-			continue
+		continue
 
 		eindBesteling = input("Wil je betalen of wil je nog verder kiezen? (Betalen/Verder)").lower()
 
 		if eindBesteling != "verder":
 			break
-	except ValueError:
-		print("Ongeldige invoer! Voer een getal in.")
 
 if PKs > 0:
 	print(f"je order bevat {PKs / PSs, 2} Small pizza('s) en kost €{round(PKs, 2)}")

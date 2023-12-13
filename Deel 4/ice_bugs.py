@@ -4,8 +4,8 @@ def convertToEuroText (amount):
 SMALL_PRICE = 1.25
 MEDIUM_PRICE = 2.10
 
-amount1 = int(input('Hoeveel ijsjes van {} wil je bestellen? '.format(convertToEuroText(SMALL_PRICE))))
-amount2 = int(input('En hoeveel ijsjes van {} wil je bestellen? '.format(convertToEuroText(MEDIUM_PRICE))))
-totalPrice = int(amount1 * SMALL_PRICE) + int(amount2 * MEDIUM_PRICE)
+small_amount = int(input('Hoeveel ijsjes van {} wil je bestellen? '.format(convertToEuroText(SMALL_PRICE))))
+medium_amount = int(input('En hoeveel ijsjes van {} wil je bestellen? '.format(convertToEuroText(MEDIUM_PRICE))))
+totalPrice = int(small_amount * SMALL_PRICE) + int(medium_amount * MEDIUM_PRICE)
 
 print('Dat is dan {} totaal'.format(convertToEuroText(totalPrice)))
