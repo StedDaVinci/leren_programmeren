@@ -1,8 +1,12 @@
-from math_operations import increment, decrement, add, subtract, multiply, divide
+from math_operations import increment, decrement, add, subtract, multiply, divide, Greater
 from test_lib import test, report
 
 nr1 = 3.0
 nr2 = 17.0
+
+expected = "Maximum: 17.0 en minimum: 3.0"
+calculated = Greater(nr1, nr2)
+test('Greater', expected, calculated)
 
 expected = nr2 + 1
 calculated = increment(nr2)

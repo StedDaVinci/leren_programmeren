@@ -19,5 +19,13 @@ def divide(nr1: float, nr2: float) -> float:
     return nr1 / nr2
   except ZeroDivisionError:
     print("er ging iets fout met het delen")
+
+def Greater(nr1: float, nr2: float) -> float:
+  if nr1 > nr2:
+    return f"Maximum: {nr1} en minimum: {nr2}"
+  elif nr2 > nr1:
+    return f"Maximum: {nr2} en minimum: {nr1}"
+  else:
+    return "Beide getallen zijn even groot"
   
 
