@@ -1,3 +1,4 @@
+import math
 # example:
 def increment(nr: float) -> float:
   return nr + 1
@@ -28,4 +29,5 @@ def Greater(nr1: float, nr2: float) -> float:
   else:
     return "Beide getallen zijn even groot"
   
-
+def calculate_cilinder_content(diameter: float, hoogte: float) -> float:
+  return round((diameter / 2) * (diameter / 2) * math.pi * hoogte, 1)
