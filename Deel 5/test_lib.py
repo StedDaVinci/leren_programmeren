@@ -16,7 +16,7 @@ def print_colorvars(txt:str='{}', vars:list=[], color:str='yellow') -> None:
 
 def feed_inputs(*values):
   for value in values:
-    data['inputs'].append(value)
+    data['inputs'].append(str(value))
 
 def expect_prompts(*values):
   for value in values:
@@ -25,6 +25,12 @@ def expect_prompts(*values):
 def expect_prints(*values):
   for value in values:
     data['prints'].append(value)
+
+def new_test(title: str):
+  add_test_result(vars=[title], color='yellow')
+  data['inputs'].clear()
+  data['prints'].clear()
+  data['prompts'].clear()
 
 def start():
   data['active'] = True
