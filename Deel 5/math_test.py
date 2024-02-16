@@ -1,8 +1,12 @@
-from math_operations import increment, decrement, add, subtract, multiply, divide, Greater
+from math_operations import increment, decrement, add, subtract, multiply, divide, Greater, cilinder_surface
 from test_lib import test, report
 
 nr1 = 3.0
 nr2 = 17.0
+
+expected = 28.27
+calculated = cilinder_surface(nr1)
+test('cilinder_surface', expected, calculated)
 
 expected = "Maximum: 17.0 en minimum: 3.0"
 calculated = Greater(nr1, nr2)

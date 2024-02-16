@@ -31,3 +31,8 @@ def Greater(nr1: float, nr2: float) -> float:
   
 def calculate_cilinder_content(diameter: float, hoogte: float) -> float:
   return round((diameter / 2) * (diameter / 2) * math.pi * hoogte, 1)
+
+def cilinder_surface(straal: float) -> float:
+  return round(straal * straal * math.pi, 2)
+
+print(cilinder_surface(3))
