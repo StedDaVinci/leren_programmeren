@@ -6,15 +6,17 @@ robotArm = RobotArm('exercise 6')
 
 robotArm.moveRight()
 
-for i in range(3):
+for i in range(6):
 	robotArm.grab()
-	robotArm.moveLeft()
-	robotArm.drop()
-	robotArm.moveRight()
-	robotArm.grab()
-	robotArm.moveRight()
-	robotArm.drop()
-	robotArm.moveLeft()
+	color = robotArm.scan()
+	if color == 'red':
+		robotArm.moveRight()
+		robotArm.drop()
+		robotArm.moveLeft()
+	else:
+		robotArm.moveLeft()
+		robotArm.drop()
+		robotArm.moveRight()
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
