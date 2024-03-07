@@ -1,8 +1,12 @@
 import time
 
-for i in range(1,13):
-	if i <= 12:
-		print(f"{i} AM")
-	else:
-		print(f"{i} PM")
+for AM in range(1,13):
+	print(f"{AM} AM")
 	time.sleep(1)
+	if AM == 12:
+		for PM in range(1,13):
+			print(f"{PM} PM")
+			time.sleep(1)
+	
+	
+
