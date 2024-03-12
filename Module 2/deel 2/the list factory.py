@@ -1,10 +1,11 @@
-Lijstje_hoeveelheid = int(input('hoeveel lijstjes wil je?: '))
-hoeveel_in_lijstje1 = int(input("hoeveel in lijstje 1? "))
-hoeveel_in_lijstje2 = int(input("hoeveel in lijstje 2? "))
-hoeveel_in_lijstje3 = int(input("hoeveel in lijstje 3? "))
+Lijstje_hoeveelheid = int(input("hoeveel lijstjes wil je?: "))
 
-lijst1 = hoeveel_in_lijstje1 * 1
-lijst2 = hoeveel_in_lijstje2 * 2
-lijst3 = hoeveel_in_lijstje3 * 3
+lijst = []
+for x in range(1,Lijstje_hoeveelheid + 1):
+	hoeveel_in_lijstje = int(input(f"hoeveel in lijstje {x}? "))
+	tijdelijke_lijst = []
+	for y in range(hoeveel_in_lijstje):
+		tijdelijke_lijst.append((y + 1) * x)
+	lijst.append(tijdelijke_lijst)
 
-print(f"{lijst1()}")
+print(lijst)

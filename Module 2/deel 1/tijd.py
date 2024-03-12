@@ -6,7 +6,6 @@ for uur in range(1,25):
 	else:
 		print(f"{uur - 12} PM")
 	time.sleep(1)
-
 	
 	
 
