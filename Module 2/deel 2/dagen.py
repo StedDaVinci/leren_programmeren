@@ -6,3 +6,7 @@ print("de weekenddagen zijn:", ', '.join(dagen[5:7]))
 print("alle dagen van de week in omgekeerde volgorde zijn:", ', '.join(reversed(dagen)))
 print("De werkdagen in omgekeerde volgorde zijn:", ', '.join(reversed(dagen[0:5])))
 print("De weekenddagen in omgekeerde volgorde zijn:", ', '.join(reversed(dagen[5:7])))
+
+print("alle dagen in de week zijn:")
+for dag in dagen[0:5]:
+	print(dag)
