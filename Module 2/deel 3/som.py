@@ -1,12 +1,9 @@
 som = 50
-vijftig = 51
-toevoeging = 1
-hoeveel_toevoeging = -1
+optellend_getal = 51
 getallen = []
 
 while som <= 1000:
-	som += vijftig
-	hoeveel_toevoeging += toevoeging
-	getallen.append(f" + {vijftig + hoeveel_toevoeging}")
+	som += optellend_getal
+	getallen.append(f" + {optellend_getal}")
 	print(f"50{''.join(getallen)} = {som}")
-	vijftig += toevoeging
+	optellend_getal += 1

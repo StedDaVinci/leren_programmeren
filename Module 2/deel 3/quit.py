@@ -6,6 +6,4 @@ while True:
 	if vraag == 'quit':
 		print(aantal_vragen)
 		break
-	else:
-		continue
 
